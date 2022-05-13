@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "33e2e83f4316db16f14434df23cadd58",
+    "content-hash": "a68be6ceed45447406857e2b270d5ffd",
     "packages": [
         {
             "name": "ajthinking/archetype",
@@ -1641,6 +1641,67 @@
                 }
             ],
             "time": "2021-12-16T16:49:26+00:00"
+        },
+        {
+            "name": "jackabox/statamic-plausible-analytics",
+            "version": "1.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jackabox/statamic-plausible-analytics.git",
+                "reference": "8afd574efb45a2f975ee529a6200147e892ed4d3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jackabox/statamic-plausible-analytics/zipball/8afd574efb45a2f975ee529a6200147e892ed4d3",
+                "reference": "8afd574efb45a2f975ee529a6200147e892ed4d3",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": "^7.2"
+            },
+            "type": "library",
+            "extra": {
+                "statamic": {
+                    "name": "Plausible Analytics",
+                    "description": "Get your Plausible Analytics data right from your Statamic dashboard"
+                },
+                "laravel": {
+                    "providers": [
+                        "Jackabox\\Plausible\\PlausibleServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Jackabox\\Plausible\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Jack Whiting",
+                    "email": "hi@jackwhiting.co.uk",
+                    "homepage": "https://jackwhiting.co.uk",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Get your Plausible Analytics data right from your Statamic dashboard.",
+            "support": {
+                "email": "hi@jackwhiting.co.uk",
+                "issues": "https://github.com/jackabox/statamic-plausible-analytics/issues",
+                "source": "https://github.com/jackabox/statamic-plausible-analytics/tree/1.2.1"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/jackabox",
+                    "type": "github"
+                },
+                {
+                    "url": "https://ko-fi.com/jackabox",
+                    "type": "ko_fi"
+                }
+            ],
+            "time": "2022-03-31T12:03:01+00:00"
         },
         {
             "name": "james-heinrich/getid3",
@@ -10201,5 +10262,5 @@
         "php": "^8.0.2"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.3.0"
+    "plugin-api-version": "2.2.0"
 }
