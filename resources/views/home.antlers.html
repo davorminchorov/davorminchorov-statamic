@@ -1,28 +1,49 @@
-<div class="max-w-5xl mx-auto relative py-16 lg:pt-40 lg:pb-32">
-    <article class="content">
-        <p class="font-medium text-lg text-teal">{{ subtitle }}</p>
-        <h1>{{ content }}</h1>
-    </article>
-</div>
+{{ collection:posts paginate="12" as="posts" sort="date:desc" }}
+    {{ if no_results }}
+        <h2 class="italic tracking-tight text-center">Looks like there were no posts published yet.</h2>
+    {{ /if }}
 
-<div class="max-w-2xl mx-auto mb-32">
-    {{ collection:articles limit="5" as="articles" }}
-        {{ if no_results }}
-            <h2 class="text-3xl italic tracking-tight">There are no articles at the moment, come back later!</h2>
-        {{ /if }}
+    {{ posts }}
+        {{ partial:partials/list-item }}
+    {{ /posts }}
 
-        {{ articles }}
-            <div class="mb-16">
-                <h2 class="mb-4">
-                    <a href="{{ url }}" class="text-2xl hover:text-teal tracking-tight leading-tight font-bold">
-                        {{ title | widont }}
-                    </a>
-                </h2>
-                <p class="text-gray-600">
-                    <span class="text-gray-800 text-sm uppercase tracking-widest font-medium">{{ date }}</span> &mdash;
-                    {{ excerpt | widont ?? content | strip_tags | safe_truncate(150, '...') }}
-                </p>
+    {{ paginate }}
+        {{ if total_items > 12 }}
+            <div class="mt-10 text-center">
+                <ul class="inline-flex items-center justify-center">
+                    {{ if prev_page }}
+                        <li class="mx-2">
+                            <a href="{{ prev_page }}" class="block px-3 py-2 border border-zinc-800 rounded-lg hover:text-white hover:border-zinc-700 transition-colors">
+                                {{ svg src="/assets/icons/arrow-left.svg" class="h-5 w-5" }}
+                            </a>
+                        </li>
+                    {{ else }}
+                        <li class="mx-2">
+                            <span class="block px-3 py-2 border border-zinc-800 rounded-lg opacity-70">
+                                {{ svg src="/assets/icons/arrow-left.svg" class="h-5 w-5" }}
+                            </span>
+                        </li>
+                    {{ /if }}
+
+                    <li class="text-sm mx-5">
+                        {{ current_page }} / {{ total_pages }}
+                    </li>
+            
+                    {{ if next_page }}
+                        <li class="mx-2">
+                            <a href="{{ next_page }}" class="block px-3 py-2 border border-zinc-800 rounded-lg hover:text-white hover:border-zinc-700 transition-colors">
+                                {{ svg src="/assets/icons/arrow-right.svg" class="h-5 w-5" }}
+                            </a>
+                        </li>
+                    {{ else }}
+                        <li class="mx-2">
+                            <span class="block px-3 py-2 border border-zinc-800 rounded-lg opacity-70">
+                                {{ svg src="/assets/icons/arrow-right.svg" class="h-5 w-5" }}
+                            </span>
+                        </li>
+                    {{ /if }}
+                </ul>
             </div>
-        {{ /articles }}
-    {{ /collection:articles }}
-</div>
+        {{ /if }}
+    {{ /paginate }}
+{{ /collection:posts }}

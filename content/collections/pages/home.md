@@ -1,9 +1,9 @@
 ---
 id: home
-blueprint: home
+blueprint: pages
 title: Home
 template: home
-updated_by: 2cd17a58-771b-4d62-9bc6-aee891d35ae4
-updated_at: 1647902051
+author: 2466b543-af56-4817-b11a-179ebe4f5839
+updated_by: 2466b543-af56-4817-b11a-179ebe4f5839
+updated_at: 1648972201
 ---
-Thoughts and experiences of a web developer in the industry.
