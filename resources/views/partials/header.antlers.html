@@ -2,11 +2,7 @@
     <div class="flex items-center mx-auto max-w-6xl px-6 py-8">
         <div class="flex-1">
             <a href="{{ link to="/" }}" class="block">
-                {{ if publication:name }}
-                    <img src="{{ publication:logo }}" alt="" class="max-h-8">
-                {{ else }}
-                    {{ publication:name }}
-                {{ /if }}
+            {{ publication:name }}
             </a>
         </div>
 
