@@ -29,3 +29,5 @@ yarn-error.log
 /public/img/fieldtypes/.meta
 .antlers.json
 /content
+/users
+
