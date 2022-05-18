@@ -25,22 +25,16 @@ sections:
         field:
           always_show_set_button: false
           buttons:
-            - h1
             - h2
             - h3
             - h4
-            - h5
-            - h6
             - bold
             - italic
-            - underline
-            - strikethrough
             - unorderedlist
             - orderedlist
             - removeformat
             - quote
             - anchor
-            - table
             - image
             - code
             - codeblock

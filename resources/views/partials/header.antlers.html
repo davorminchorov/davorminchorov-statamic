@@ -2,7 +2,11 @@
     <div class="flex items-center mx-auto max-w-6xl px-6 py-8">
         <div class="flex-1">
             <a href="{{ link to="/" }}" class="block">
-                {{ publication:name }}
+                {{ if publication:name }}
+                    <img src="{{ publication:logo }}" alt="" class="max-h-8">
+                {{ else }}
+                    {{ publication:name }}
+                {{ /if }}
             </a>
         </div>
 
@@ -30,12 +34,12 @@
         <ul class="hidden sm:inline-flex items-center">
             {{ nav:top_nav select="title|url" }}
                 <li class="ml-5">
-                    <a href="{{ url }}" class="hover:text-emerald-200 transition-colors{{ if is_current || is_parent }} text-white{{ /if }}">{{ title }}</a>
+                    <a href="{{ url }}" class="hover:text-zinc-200 transition-colors{{ if is_current || is_parent }} text-white{{ /if }}">{{ title }}</a>
                 </li>
             {{ /nav:top_nav  }}
             {{ if publication:show_tags_navigation }}
                 <li class="ml-5">
-                    <a href="{{ link to="posts/tags" }}" class="hover:text-emerald-200 transition-colors{{ if is_current || is_parent }} text-white{{ /if }}">Tags</a>
+                    <a href="{{ link to="posts/tags" }}" class="hover:text-zinc-200 transition-colors{{ if is_current || is_parent }} text-white{{ /if }}">Tags</a>
                 </li>
             {{ /if }}
         </ul>

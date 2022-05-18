@@ -15,24 +15,17 @@ sections:
         field:
           always_show_set_button: false
           buttons:
-            - h1
             - h2
             - h3
             - h4
-            - h5
-            - h6
             - bold
             - italic
-            - underline
             - unorderedlist
             - orderedlist
             - removeformat
             - quote
             - anchor
-            - table
             - image
-            - code
-            - codeblock
             - horizontalrule
           save_html: false
           toolbar_mode: fixed
@@ -51,7 +44,6 @@ sections:
           listable: hidden
           instructions_position: above
           read_only: false
-          container: assets
   sidebar:
     display: Sidebar
     fields:
