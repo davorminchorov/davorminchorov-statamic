@@ -15,6 +15,7 @@
         "laravel/framework": "^9.2",
         "laravel/sanctum": "^2.14.1",
         "laravel/tinker": "^2.7",
+        "mitydigital/feedamic": "^2.1",
         "statamic/cms": "3.3.11"
     },
     "require-dev": {
