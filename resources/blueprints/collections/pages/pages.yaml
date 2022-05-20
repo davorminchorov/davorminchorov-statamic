@@ -13,7 +13,7 @@ sections:
       -
         handle: content
         field:
-          always_show_set_button: false
+          always_show_set_button: true
           buttons:
             - h2
             - h3
@@ -44,6 +44,12 @@ sections:
           listable: hidden
           instructions_position: above
           read_only: false
+          sets:
+            image:
+              display: image
+              fields:
+                -
+                  import: image
   sidebar:
     display: Sidebar
     fields:
