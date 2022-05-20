@@ -24,7 +24,7 @@
         {{ elseif publication:twitter_card_image }}
             <meta name="twitter:image" content="{{ glide:publication:twitter_card_image width="600" }}">
         {{ /if }}
-
+        {{ thumbnails }}
         <link rel="stylesheet" href="{{ mix src='css/web.css' }}">
         <script defer data-domain="davorminchorov.com" src="https://plausible.io/js/plausible.js"></script>
     </head>

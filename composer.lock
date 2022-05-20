@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a68be6ceed45447406857e2b270d5ffd",
+    "content-hash": "4e022d53569cbd987b728db0bb4fc238",
     "packages": [
         {
             "name": "ajthinking/archetype",
@@ -129,6 +129,65 @@
                 }
             ],
             "time": "2021-08-15T20:50:18+00:00"
+        },
+        {
+            "name": "codebyflame/thumbnails",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/codebyflame/thumbnails.git",
+                "reference": "145f8b0304ce3f18e0900fae99fcee1dd358c7ba"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/codebyflame/thumbnails/zipball/145f8b0304ce3f18e0900fae99fcee1dd358c7ba",
+                "reference": "145f8b0304ce3f18e0900fae99fcee1dd358c7ba",
+                "shasum": ""
+            },
+            "require": {
+                "ext-fileinfo": "*",
+                "ext-gd": "*",
+                "php": ">=7.2.0"
+            },
+            "type": "statamic-addon",
+            "extra": {
+                "statamic": {
+                    "name": "Thumbnails",
+                    "description": "Generates social media thumbnail images based on the title of a collection item"
+                },
+                "laravel": {
+                    "providers": [
+                        "CodeByFlame\\Thumbnails\\ServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "CodeByFlame\\Thumbnails\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Flame",
+                    "email": "asko@hey.com"
+                }
+            ],
+            "description": "Generates social media thumbnail images based on the title of a collection item",
+            "keywords": [
+                "CodeByFlame",
+                "Thumbnails",
+                "facebook",
+                "opengraph",
+                "statamic",
+                "twitter"
+            ],
+            "support": {
+                "email": "asko@hey.com",
+                "issues": "https://github.com/codebyflame/thumbnails/issues",
+                "source": "https://github.com/codebyflame/thumbnails/tree/1.0.1"
+            },
+            "time": "2021-01-24T01:44:55+00:00"
         },
         {
             "name": "composer/ca-bundle",

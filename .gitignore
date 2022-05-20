@@ -18,6 +18,7 @@ yarn-error.log
 .DS_Store
 /public/css
 /public/vendor/statamic
+/public/vendor/thumbnails
 /public/js
 /storage/statamic/users
 /storage/debugbar/*
