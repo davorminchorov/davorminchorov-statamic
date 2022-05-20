@@ -1,4 +1,4 @@
-{{ collection:posts paginate="12" as="posts" sort="date:desc" }}
+{{ collection:posts paginate="12" as="posts" sort="id:desc" }}
     {{ if no_results }}
         <h2 class="italic tracking-tight text-center">Looks like there were no posts published yet.</h2>
     {{ /if }}
@@ -28,7 +28,7 @@
                     <li class="text-sm mx-5">
                         {{ current_page }} / {{ total_pages }}
                     </li>
-            
+
                     {{ if next_page }}
                         <li class="mx-2">
                             <a href="{{ next_page }}" class="block px-3 py-2 border border-zinc-800 rounded-lg hover:text-white hover:border-zinc-700 transition-colors">
