@@ -10,14 +10,14 @@
     "require": {
         "php": "^8.0.2",
         "codebyflame/thumbnails": "^1.0",
-        "enlightn/enlightn": "^1.25",
+        "enlightn/enlightn": "^2.1",
         "guzzlehttp/guzzle": "^7.2",
         "jackabox/statamic-plausible-analytics": "^1.2",
         "laravel/framework": "^9.2",
-        "laravel/sanctum": "^2.14.1",
+        "laravel/sanctum": "^3.0",
         "laravel/tinker": "^2.7",
         "mitydigital/feedamic": "^2.1",
-        "statamic/cms": "3.3.11"
+        "statamic/cms": "^3.3"
     },
     "require-dev": {
         "fakerphp/faker": "^1.9.1",
