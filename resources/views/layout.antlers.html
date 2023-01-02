@@ -8,8 +8,6 @@
 
         <meta name="description" content="{{ excerpt ?? publication:description | strip_tags | safe_truncate:155:... }}" />
 
-        <meta property="og:title" content="{{ title ?? site:name }} | {{ publication:name }}" />
-        <meta property="og:description" content="{{ excerpt ?? publication:description | strip_tags | safe_truncate:155:... }}" />
         {{ if og_image }}
             <meta property="og:image" content="{{ glide:og_image width="1200" }}">
         {{ elseif publication:og_image }}
