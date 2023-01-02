@@ -7,7 +7,9 @@
         <title>{{ title ?? site:name }} | {{ publication:name }}</title>
 
         <meta name="description" content="{{ excerpt ?? publication:description | strip_tags | safe_truncate:155:... }}" />
+
         {{ thumbnails }}
+        <meta property="og:description" content="{{ excerpt ?? publication:description | strip_tags | safe_truncate:155:... }}" />
 
         {{ feedamic }}
         <link rel="stylesheet" href="{{ mix src='css/web.css' }}">
