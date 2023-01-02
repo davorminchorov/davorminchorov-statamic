@@ -7,13 +7,8 @@
         <title>{{ title ?? site:name }} | {{ publication:name }}</title>
 
         <meta name="description" content="{{ excerpt ?? publication:description | strip_tags | safe_truncate:155:... }}" />
-
         {{ thumbnails }}
-        <meta property="og:description" content="{{ excerpt ?? publication:description | strip_tags | safe_truncate:155:... }}" />
 
-        <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:title" content="{{ title ?? site:name }} | {{ publication:name }}">
-        <meta name="twitter:description" content="{{ excerpt ?? publication:description | strip_tags | safe_truncate:155:... }}">
         {{ feedamic }}
         <link rel="stylesheet" href="{{ mix src='css/web.css' }}">
         <script defer data-domain="davorminchorov.com" src="https://plausible.io/js/plausible.js"></script>
