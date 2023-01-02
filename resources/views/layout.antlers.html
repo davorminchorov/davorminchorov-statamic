@@ -10,20 +10,10 @@
 
         {{ thumbnails }}
         <meta property="og:description" content="{{ excerpt ?? publication:description | strip_tags | safe_truncate:155:... }}" />
-        {{ if og_image }}
-            <meta property="og:image" content="{{ glide:og_image width="1200" }}">
-        {{ elseif publication:og_image }}
-            <meta property="og:image" content="{{ glide:publication:og_image width="1200" }}">
-        {{ /if }}
 
         <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:title" content="{{ title ?? site:name }} | {{ publication:name }}">
         <meta name="twitter:description" content="{{ excerpt ?? publication:description | strip_tags | safe_truncate:155:... }}">
-        {{ if twitter_card_image }}
-            <meta name="twitter:image" content="{{ glide:twitter_card_image width="600" }}">
-        {{ elseif publication:twitter_card_image }}
-            <meta name="twitter:image" content="{{ glide:publication:twitter_card_image width="600" }}">
-        {{ /if }}
         {{ feedamic }}
         <link rel="stylesheet" href="{{ mix src='css/web.css' }}">
         <script defer data-domain="davorminchorov.com" src="https://plausible.io/js/plausible.js"></script>
