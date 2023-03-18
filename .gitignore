@@ -31,4 +31,5 @@ yarn-error.log
 .antlers.json
 /content
 /users
-
+/public/assets
+/public
