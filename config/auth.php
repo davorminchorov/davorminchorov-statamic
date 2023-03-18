@@ -60,15 +60,16 @@ return [
     */
 
     'providers' => [
+        // 'users' => [
+        //     'driver' => 'statamic',
+        //     'model' => App\Models\User::class,
+        // ],
+
         'users' => [
-            'driver' => 'statamic',
+            'driver' => 'eloquent',
+            'table' => 'users',
             'model' => App\Models\User::class,
         ],
-
-        // 'users' => [
-        //     'driver' => 'database',
-        //     'table' => 'users',
-        // ],
     ],
 
     /*
