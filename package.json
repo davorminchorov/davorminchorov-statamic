@@ -19,7 +19,7 @@
         "postcss-import": "^14.0.1",
         "tailwindcss": "^3.0.23",
         "vue-template-compiler": "^2.6.12",
-        "webpack": "^5.72.1"
+        "webpack": "^5.76.0"
     },
     "dependencies": {
         "alpinejs": "^3.9.5",
