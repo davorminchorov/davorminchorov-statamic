@@ -3,30 +3,30 @@
     <h4 class="max-w-xl font-medium ">{{subtitle}}</h4>
     <div class="mt-16 max-w-xl sm:mt-20">
     {{ form:contact }}
-    {{if success}} <p class=" font-bold text-green-400 text-lg mb-4">Thank you for contacting me, I'll get back to you soon.</p>{{/if}}
- 
+    {{if success}} <p class="mt-2 font-bold text-green-400 text-lg mb-4">Thank you for contacting me, I'll get back to you soon.</p>{{/if}}
+
       <div class="grid grid-cols-1 gap-y-6 gap-x-8 sm:grid-cols-2">
         <div class="sm:col-span-2">
           <label for="name" class="block text-sm font-semibold leading-6 text-white">Name</label>
           <div class="mt-1.5">
             <input type="text" value="{{old:name}}" name="name" required id="name" autocomplete="given-name" class="block w-full rounded-md border-0 py-2 px-3.5 shadow-sm ring-1 ring-inset ring-emerald-900/70 placeholder:text-gray-400 bg-zinc-800 text-white focus:ring-2 focus:ring-inset focus:ring-emerald-900/70 sm:text-sm sm:leading-6">
-            <p class=" font-bold text-red-400 text-sm">{{ error:name }}</p>
+            <p class="mt-2 font-bold text-red-400 text-sm">{{ error:name }}</p>
         </div>
         </div>
-       
+
         <div class="sm:col-span-2">
           <label for="email" class="block text-sm font-semibold leading-6 text-white">Email</label>
           <div class="mt-1.5">
             <input type="email" name="email" value="{{old:email}}" required id="email" autocomplete="email" class="block w-full rounded-md border-0 py-2 px-3.5 shadow-sm ring-1 ring-inset ring-emerald-900/70 placeholder:text-gray-400 focus:ring-2 bg-zinc-800 text-white focus:ring-inset focus:ring-emerald-900/70 sm:text-sm sm:leading-6">
-            <p class=" font-bold text-red-400 text-sm">{{ error:email }}</p>
+            <p class="mt-2 font-bold text-red-400 text-sm">{{ error:email }}</p>
         </div>
         </div>
-       
+
         <div class="sm:col-span-2">
           <label for="message" class="block text-sm font-semibold leading-6 text-white">Message</label>
           <div class="mt-1.5">
             <textarea name="message" id="message" rows="4" required class="block w-full rounded-md border-0 py-2 px-3.5 shadow-sm ring-1 ring-inset ring-emerald-900/70 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-emerald-900/70 bg-zinc-800 text-white sm:text-sm sm:leading-6">{{old:message}}</textarea>
-            <p class=" font-bold text-red-400 text-sm">{{ error:message }}</p>
+            <p class="mt-2 font-bold text-red-400 text-sm">{{ error:message }}</p>
         </div>
         </div>
         <!-- // Add the honeypot field -->
